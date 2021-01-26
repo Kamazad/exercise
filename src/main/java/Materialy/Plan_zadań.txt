@@ -1,0 +1,16 @@
+1. Zadania 1_sda 1-10
+		* Zadania z daty czasu (1_mz) i regex (2_mz) dla tych co skończą przed grupa - ZADANIE DOMOWE
+2. Omawiamy OOP i kolekcje (master)
+3. Zadania 1_mz z kolekcji
+4. Zadania 1_mz OOP
+4*. Abstrakcja zadanie 37.
+5. Zadania 3_sda OOP - zadania 1-13
+6. Zadania 2_sda OOP + dali trochę matmy (liczby zespolone ;) ) - ZADANIE DOMOWE
+7. Zadania 3_sda OOP od 14 do końca - ZADANIE DOMOWE
+
+* mz - odpowiedzi są już udostępnione https://github.com/michalziolecki/java_basics_programming
+Gałęzie z odpowiedziami:
+  java_exercises_1_mz
+  java_exercises_1_mz_oop
+  java_exercises_1_sda
+  java_exercises_2_mz

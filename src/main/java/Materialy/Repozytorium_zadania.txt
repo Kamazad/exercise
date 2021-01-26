@@ -1,0 +1,2 @@
+# Repozytorium z rozwiązaniami do zadań:
+https://github.com/michalziolecki/java_basics_programming
