@@ -23,13 +23,14 @@ public class Main {
         int howManyNames = 5;
 
         while (howManyNames > startOfScanning) {
+            System.out.println("Podaj imię o indeksie : " + startOfScanning);
             names.add(scanner.nextLine());
             startOfScanning++;
         }
         //b.
         startOfScanning = 0;
         while (howManyNames > startOfScanning) {
-            System.out.println(names.get(startOfScanning));
+            System.out.println("Pod indeksem : " + startOfScanning + " znajduję się :" + names.get(startOfScanning));
             startOfScanning++;
         }
 
