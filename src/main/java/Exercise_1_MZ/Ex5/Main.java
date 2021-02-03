@@ -1,6 +1,7 @@
 package Exercise_1_MZ.Ex5;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<String> names = new ArrayList<>();
+        List<String> names = new ArrayList<>();
 
         Scanner scanner = new Scanner(System.in);
 

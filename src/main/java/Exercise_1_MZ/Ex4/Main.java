@@ -1,6 +1,7 @@
 package Exercise_1_MZ.Ex4;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Utwórz listę ArrayList przechowującą imiona.
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<String> names = new ArrayList<>();
+        List<String> names = new ArrayList<>();
         //a.
         names.add("Krzyś");
         names.add("Joanna");

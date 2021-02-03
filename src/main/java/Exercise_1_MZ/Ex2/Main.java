@@ -1,6 +1,7 @@
 package Exercise_1_MZ.Ex2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**Utwórz listę ArrayList przechowującą liczby całkowite.
 a. Dodaj 3 dowolne liczby, a następnie wyświetl długość tablicy.
@@ -10,7 +11,7 @@ c. Wyświetl ostatni element zapisany w liście
 public class Main {
     public static void main(String[] args) {
         //implementuje ArrayListy
-        ArrayList<Integer> ints= new ArrayList<>();
+        List<Integer> ints= new ArrayList<>();
 
         //a.
         ints.add(5);

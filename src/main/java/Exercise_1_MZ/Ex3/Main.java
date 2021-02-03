@@ -1,6 +1,7 @@
 package Exercise_1_MZ.Ex3;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -14,7 +15,7 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Double> doubles = new ArrayList<>();
+        List<Double> doubles = new ArrayList<>();
 
         //modyfikacja zadania dodano 10 elementów wykorzystując klasę Random
 
