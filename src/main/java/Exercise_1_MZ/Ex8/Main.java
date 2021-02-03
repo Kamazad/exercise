@@ -19,9 +19,31 @@ package Exercise_1_MZ.Ex8;
  * [5] = e
  * [6] = r
  * [7] = d
-* */
+ */
 
 public class Main {
+    public static void main(String[] args) {
+        String name = "Olgierd";
 
+        //a.
+        System.out.println(name.toUpperCase());
+        //b.
+        System.out.println(name.toLowerCase());
+        //c.
+        System.out.println("Długość Stringa " + name + " wynosi : " + name.length() + " liter");
+        //d.
+        System.out.println(name.startsWith("O"));
+        //e.
+        System.out.println(name.contains("e"));
+        //f.
+        String name2;
+        name2 = name.replace("e", "");
+        name2 = name2.replace("i", "");
+        System.out.println(name2);
+        //g.
+        for (int i = 0; i < name.length(); i++) {
+            System.out.println("[" + (i + 1) + "] = " + name.charAt(i));
+        }
+    }
 
 }
