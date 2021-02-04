@@ -19,4 +19,9 @@ package Exercise_1_MZ.Ex16_to_Ex27;
  */
 
 public class Main {
+    public static void main(String[] args) {
+        Person person = new Person("adam", "jakis", 32);
+
+        person.introduce();
+    }
 }
