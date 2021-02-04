@@ -4,19 +4,30 @@ public class Person {
     private String name;
     private String surname;
     private int age;
-
+    private Address address;
     public Person() {
 
     }
-
     public Person(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.address = null;
+    }
+
+    public Person(String name, String surname, int age, Address address) {
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+        this.address = address;
     }
 
     public void introduce() {
         System.out.println(getName() + " " + getSurname());
+    }
+
+    public void introduceWithAddress() {
+        System.out.println(getName() + " " + getSurname() + " i mieszkam " + address.toString());
     }
 
     public String getName() {

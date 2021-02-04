@@ -20,8 +20,13 @@ package Exercise_1_MZ.Ex16_to_Ex27;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Person("adam", "jakis", 32);
+        Person person1 = new Person("adam", "jakis", 32, (new Address("Rymera","Zabrze","Polska","4", "1")));
 
-        person.introduce();
+        person1.introduce();
+
+        Address address =new Address("Nie - Rymera", "Nie - Zabrze", "Nie - Polska", "Nie - 4", "Nie - 1");
+        Person person2 = new Person("Nie - adam", "Nie jakis", 546, address);
+
+        person2.introduceWithAddress();
     }
 }
