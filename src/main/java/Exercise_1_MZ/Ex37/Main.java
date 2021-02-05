@@ -1,5 +1,10 @@
 package Exercise_1_MZ.Ex37;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
 /**
  * 37. *Zadanie na tworzenie odpowiedniego typu
  * a. Utwórz klasę abstrakcyjną Figure posiadającą metodę abstrakcyjną float
@@ -38,7 +43,47 @@ package Exercise_1_MZ.Ex37;
  * boków/promienia korzystając z klasy Random
  * i. Wyświetl po kolei powierzchnię każdej figury znajdującej się w tablicy za
  * pomocą pętli for korzystając z metody displayArea().
- * */
+ */
 
 public class Main {
+    public static void main(String[] args) {
+        Rectangle rectangle = new Rectangle(2, 3);
+        rectangle.displayArea();
+
+        Square square = new Square(4);
+        square.displayArea();
+
+        Circle circle = new Circle(4);
+        circle.displayArea();
+
+        //f.
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ile chcesz Prostokątów ?");
+        int howManyRectangles = scanner.nextInt();
+        System.out.println("Ile chcesz Kwadratów ?");
+        int howManySquares = scanner.nextInt();
+        System.out.println("Ile chcesz Kół ?");
+        int howManyCircles = scanner.nextInt();
+
+        //g.
+        List<Figure> figure = new ArrayList<>();
+        //h.
+        Random generator = new Random(12345);
+
+        for (int i = 0; i < howManyRectangles; i++) {
+            figure.add(new Rectangle(generator.nextFloat() * 10, generator.nextFloat() * 10));
+        }
+
+        for (int i = 0; i < howManySquares; i++) {
+            figure.add(new Square(generator.nextFloat() * 10));
+        }
+
+        for (int i = 0; i < howManyCircles; i++) {
+            figure.add(new Circle(generator.nextFloat() * 10));
+        }
+
+        for (Figure f : figure){
+            f.displayArea();
+        }
+    }
 }
