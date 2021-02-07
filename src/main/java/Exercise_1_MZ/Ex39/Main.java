@@ -33,7 +33,7 @@ public class Main {
         System.out.println("Najniższa wartość wśród wczytanych liczby wynosi : " + Methods.min(listOfNumbers));
         System.out.println("Najwyższa wartość wśród wczytanych liczby wynosi : " + Methods.max(listOfNumbers));
 
-        //todo
+        //todo*
         //wyjątki
     }
 }
