@@ -1,3 +1,6 @@
 Exercise_1_MZ
-EX 38
-EX 40
+EX 38 - parse i wyjątki
+EX 40 - generyki
+
+Exercise_2_SDA
+Ex 2 - Find out what to do
