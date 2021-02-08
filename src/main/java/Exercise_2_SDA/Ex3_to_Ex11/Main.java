@@ -1,4 +1,4 @@
-package Exercise_2_SDA.Ex3_to_Ex11
+package Exercise_2_SDA.Ex3_to_Ex11;
 
 import static Exercise_2_SDA.Ex3_to_Ex11.Complex.howManyComplexNumbers;
 
