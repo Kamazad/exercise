@@ -10,3 +10,4 @@ Ex13 - Need to think about it
 Exercise_3_SDA
 Ex14 - start from beginning
 
+Exercise_2_MZ
