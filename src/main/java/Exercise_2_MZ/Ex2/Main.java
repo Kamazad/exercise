@@ -14,10 +14,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         boolean isOK = false;
-
+        Pattern pattern = Pattern.compile("[0-9][0-9]-[0-9][0-9][0-9]");
         do {
             System.out.println("Podaj, kod pocztowy");
-            Pattern pattern = Pattern.compile("[0-9][0-9]-[0-9][0-9][0-9]");
+
             String postalCode = scanner.next();
             Matcher matcher = pattern.matcher(postalCode);
 
