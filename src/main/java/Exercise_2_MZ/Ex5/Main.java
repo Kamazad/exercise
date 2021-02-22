@@ -14,14 +14,14 @@ import java.util.regex.Pattern;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pattern wordAlaPattern = Pattern.compile("[0-3][0-9]\\.[0-1][0-9].[0-9][0-9][0-9][0-9]r\\.");
+        Pattern wordFromScanner = Pattern.compile("[0-3][0-9]\\.[0-1][0-9].[0-9][0-9][0-9][0-9]r\\.");
 
         boolean isOk = false;
 
         System.out.println("Podaj ciąg date w systemie DD.MM.YYYYr.");
         do {
             String word = scanner.nextLine();
-            Matcher matcher = wordAlaPattern.matcher(word);
+            Matcher matcher = wordFromScanner.matcher(word);
 
             if (matcher.matches()){
                 isOk =true;

@@ -12,10 +12,8 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-
-
         Scanner scanner = new Scanner(System.in);
-        Pattern wordAlaPattern = Pattern.compile("[A-Z]{3}[0-9]{5}[a-z][A-Z]");
+        Pattern wordFromScanner = Pattern.compile("[A-Z]{3}[0-9]{5}[a-z][A-Z]");
 
         boolean isOk = false;
 
@@ -23,11 +21,11 @@ public class Main {
         System.out.println("3 duże litery, 5 cyfr, 1 małej litery i 1 dużej litery np. VSD43281fA.");
         do {
             String word = scanner.nextLine();
-            Matcher matcher = wordAlaPattern.matcher(word);
+            Matcher matcher = wordFromScanner.matcher(word);
 
             if (matcher.matches()) {
                 isOk = true;
-                System.out.println("Dziękuje za wpisanie poprawnej numer seryjny");
+                System.out.println("Dziękuje za wpisanie poprawnego numeru seryjnego");
             } else {
                 System.out.println("Niepoprawnie został wprowadzano numer seryjny");
             }
