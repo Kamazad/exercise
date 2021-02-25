@@ -21,21 +21,19 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Pattern wordFromScanner = Pattern.compile("[0-9]{2}[0-3][0-9][0-3][0-9]{6}");
 
-        byte[] peselAsByteTable = new byte[11];
         boolean isOk = false;
 
-        String yearString = new String();
-        String monthString = new String();
-        String dayString = new String();
-        String serialString = new String();
-        String controlSumString = new String();
+        String yearString = null;
+        String monthString = null;
+        String dayString = null;
+        String serialString = null;
+        String controlSumString = null;
         Gender gender = null;
 
 
         System.out.println("Podaj numer PESEL ");
         do {
-            //String word = scanner.nextLine();
-            String word = "86061416778";
+            String word = scanner.nextLine();
             Matcher matcher = wordFromScanner.matcher(word);
             if (matcher.matches()) {
                 System.out.println("Pierwszy etap weryfikacji");
